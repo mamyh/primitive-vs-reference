@@ -41,5 +41,5 @@ let change = (val) => {
     console.log(pass);//1
     console.log(val);//2
 }
-change(pass);//seems like pass by value
+change(pass);//seems like pass by value but actually passed by reference; IN jS function  Everything is passed by reference 
 console.log(pass);//1
