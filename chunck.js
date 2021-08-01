@@ -32,3 +32,14 @@ console.log(sa1);
 var mutable = 'sakib';
 mutable.test = 'tamim' //just ignore this line ,there will be no error
 console.log(mutable);
+
+// pass by reference /value 
+let pass = 1;
+let change = (val) => {
+    console.log(val);//1
+    val = 2;
+    console.log(pass);//1
+    console.log(val);//2
+}
+change(pass);//seems like pass by value
+console.log(pass);//1
